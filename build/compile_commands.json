@@ -1,0 +1,8 @@
+[
+{
+  "directory": "D:/Projects/YT/TutorialExternalDDNetC++/build",
+  "command": "D:\\msys64\\ucrt64\\bin\\g++.exe -g -o CMakeFiles\\TutorialExternalDDNet.dir\\main.cpp.obj -c D:\\Projects\\YT\\TutorialExternalDDNetC++\\main.cpp",
+  "file": "D:\\Projects\\YT\\TutorialExternalDDNetC++\\main.cpp",
+  "output": "CMakeFiles\\TutorialExternalDDNet.dir\\main.cpp.obj"
+}
+]
