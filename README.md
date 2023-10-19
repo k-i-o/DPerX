@@ -1,4 +1,4 @@
-# TutorialExternalDDNetCpp
+# DPerX
 
 Original External client called DPerX, developed by kio (Samuele Radici) the client is compatible with DDNet and DDPER client (not others)
 
