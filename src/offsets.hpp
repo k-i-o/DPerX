@@ -43,7 +43,7 @@ namespace offsets {
             walk_left = 0xF0;
             walk_right = 0xF8;
         } else if (client == GameInfo::DDNET) {
-            static_server = 0x00465DA0;
+            static_server = 0x466CC0;
             online_players = 0x143C;
             localplayer_id = 0x1438;
             first_player = 0x1460;
