@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10.0)
-project(TutorialExternalDDNet VERSION 0.1.0 LANGUAGES C CXX)
+project(DPerX VERSION 0.1.0 LANGUAGES C CXX)
 
 find_package(Threads REQUIRED)
 
@@ -41,12 +41,12 @@ set(SOURCES
 )
 
 
-add_executable(TutorialExternalDDNet ${SOURCES} ${IMGUI_SOURCES} project.rc)
+add_executable(DPerX ${SOURCES} ${IMGUI_SOURCES} project.rc)
 
-target_include_directories(TutorialExternalDDNet PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src/libs/imgui)
+target_include_directories(DPerX PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src/libs/imgui)
 
-target_link_libraries(TutorialExternalDDNet PRIVATE Threads::Threads d3d11 d3dcompiler dwmapi)
-target_compile_features(TutorialExternalDDNet PRIVATE cxx_std_20)
+target_link_libraries(DPerX PRIVATE Threads::Threads d3d11 d3dcompiler dwmapi)
+target_compile_features(DPerX PRIVATE cxx_std_20)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

@@ -1,4 +1,5 @@
-D:/Projects/YT/TutorialExternalDDNetC++/build/CMakeFiles/TutorialExternalDDNet.dir
-D:/Projects/YT/TutorialExternalDDNetC++/build/CMakeFiles/PACKAGE.dir
-D:/Projects/YT/TutorialExternalDDNetC++/build/CMakeFiles/ALL_BUILD.dir
-D:/Projects/YT/TutorialExternalDDNetC++/build/CMakeFiles/ZERO_CHECK.dir
+D:/Projects/DDNet/DPerXCpp/build/CMakeFiles/DPerX.dir
+D:/Projects/DDNet/DPerXCpp/build/CMakeFiles/package.dir
+D:/Projects/DDNet/DPerXCpp/build/CMakeFiles/package_source.dir
+D:/Projects/DDNet/DPerXCpp/build/CMakeFiles/edit_cache.dir
+D:/Projects/DDNet/DPerXCpp/build/CMakeFiles/rebuild_cache.dir

@@ -87,7 +87,7 @@ int main(int, char**){
             spinbot.Rotate();
         }
 
-        std::this_thread::sleep_for(std::chrono::milliseconds(5));
+        std::this_thread::sleep_for(std::chrono::milliseconds(1));
 
     }
 
