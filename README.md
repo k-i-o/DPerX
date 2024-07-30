@@ -9,3 +9,5 @@ For an overview of DPerX, check out this video: [Watch Video](https://www.youtub
 ![DPerX](https://github.com/k-i-o/TutorialExternalDDNetCpp/assets/68398653/2a06f500-6637-4240-b019-d06db403600c)
 
 Stay tuned for updates and improvements! ✨
+
+Note: you can use it, edit it, sell it, just give me credits :(
