@@ -2,7 +2,7 @@
 
 Welcome to **DPerX**! 🎉
 
-DPerX is an innovative external client originally developed by kio (Samuele Radici). This client is designed to be compatible with DDNet and the DDPER client. In 2024, we are excited to announce that DPerX is undergoing a significant modernization and overhaul to enhance its performance and user experience. 🚀
+DPerX is an innovative external client originally developed by kio (Samuele Radici). This client is designed to be compatible with DDNet and the DDPER client. In 2024, the kiocode group is excited to announce that DPerX is undergoing a significant modernization and overhaul to enhance its performance and user experience. 🚀
 
 For an overview of DPerX, check out this video: [Watch Video](https://www.youtube.com/watch?v=S9F11I9UtFM) 🎥
 
