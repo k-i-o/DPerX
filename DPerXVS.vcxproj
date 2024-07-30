@@ -24,6 +24,7 @@
     <ProjectGuid>{293dfd60-5c5c-4943-b242-81129e509f17}</ProjectGuid>
     <RootNamespace>DPerXVS</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>DPerX</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
