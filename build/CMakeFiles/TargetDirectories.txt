@@ -1,5 +1,0 @@
-D:/Projects/DDNet/DPerXCpp/build/CMakeFiles/DPerX.dir
-D:/Projects/DDNet/DPerXCpp/build/CMakeFiles/package.dir
-D:/Projects/DDNet/DPerXCpp/build/CMakeFiles/package_source.dir
-D:/Projects/DDNet/DPerXCpp/build/CMakeFiles/edit_cache.dir
-D:/Projects/DDNet/DPerXCpp/build/CMakeFiles/rebuild_cache.dir

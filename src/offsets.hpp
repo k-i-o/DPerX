@@ -5,60 +5,27 @@
 #include <cstddef>
 #include <iostream>
 
-namespace offsets {
+namespace variables {
 
-    constexpr ptrdiff_t static_server = 0x0033DD18;
-    constexpr ptrdiff_t online_players = 0x142C;
-    constexpr ptrdiff_t localplayer_id = 0x1428;
-    constexpr ptrdiff_t first_player = 0x1450;
-    constexpr ptrdiff_t next_player = 0xF8;
-    constexpr ptrdiff_t position = 0x153C;
-    constexpr ptrdiff_t gametick = 0x1530;
-    constexpr ptrdiff_t freezed = 0x1530;
+    class Offsets {
+    public:
+        static ptrdiff_t static_server;
+        static ptrdiff_t online_players;
+        static ptrdiff_t localplayer_id;
+        static ptrdiff_t first_player;
+        static ptrdiff_t next_player;
+        static ptrdiff_t position;
+        static ptrdiff_t gametick;
+        static ptrdiff_t frozen;
 
-    inline ptrdiff_t static_localplayer = 0x0;
-    inline ptrdiff_t my_aim = 0x0;
-    inline ptrdiff_t my_aim_world = 0x0;
-    inline ptrdiff_t fire = 0x0;
-    inline ptrdiff_t walk_left = 0x0;
-    inline ptrdiff_t walk_right = 0x0;
+        static ptrdiff_t static_localplayer;
+        static ptrdiff_t my_aim;
+        static ptrdiff_t my_aim_world;
+        static ptrdiff_t fire;
+        static ptrdiff_t walk_left;
+        static ptrdiff_t walk_right;
 
-    inline void Initialize(int client) {
-        std::cout << ("Initializing offsets...") << std::endl;
+        static void Initialize(int client);
+    };
 
-        if (client == GameInfo::DDPER) {
-            static_server = 0x0033DD18;
-            online_players = 0x142C;
-            localplayer_id = 0x1428;
-            first_player = 0x1450;
-            next_player = 0xF8;
-            position = 0x153C;
-            gametick = 0x1530;
-            freezed = 0x1508;
-
-            static_localplayer = 0x002F2D38;
-            my_aim = 0x10;
-            my_aim_world = 0x20;
-            fire = 0x60;
-            walk_left = 0xF0;
-            walk_right = 0xF8;
-        } else if (client == GameInfo::DDNET) {
-            static_server = 0x466CC0;
-            online_players = 0x143C;
-            localplayer_id = 0x1438;
-            first_player = 0x1460;
-            next_player = 0xF8;
-            position = 0x154C;
-            gametick = 0x1540;
-            freezed = 0x1518;
-
-            static_localplayer = 0x00335B80;
-            my_aim = 0x10;
-            my_aim_world = 0x20;
-            fire = 0x60;
-            walk_left = 0xF0;
-            walk_right = 0xF8;
-        }
-    }
-        
-};
+}

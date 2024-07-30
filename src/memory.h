@@ -6,7 +6,8 @@
 #include <cstdint>
 #include <string_view>
 
-class Memory{
+class Memory
+{
 private:
 	std::uintptr_t processId = 0;
 	void* processHandle = nullptr;

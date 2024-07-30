@@ -1,6 +1,0 @@
-#ifndef _project_h
-#define _project_h
-
-MANIFEST ICON "icon.ico"
-
-#endif

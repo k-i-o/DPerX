@@ -6,10 +6,10 @@
 void Aimbot::AimTarget(Vector2 target, LocalPlayer *localPlayer){
     target.x = target.x - localPlayer->position.x;
     target.y = target.y - localPlayer->position.y;
-    memory->Write<Vector2>(memory_address + offsets::my_aim, target);
+    memory->Write<Vector2>(memory_address + variables::Offsets::my_aim, target);
 
     if(autofire && distance(target, localPlayer->aim) < autofire_distance){
-        memory->Write<int32_t>(memory_address + offsets::fire, localPlayer->fire + 1);
+        memory->Write<int32_t>(memory_address + variables::Offsets::fire, localPlayer->fire + 1);
     }
 }
 

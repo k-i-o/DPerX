@@ -1,0 +1,136 @@
+# Visual Studio
+.vscode/
+.vscode/*
+.vs/
+.vs/*
+
+# Visual Studio Code
+.vscode/*
+
+# Prerequisite's
+*.class
+*.vspscc
+*.suo
+*.tmp
+*.user
+*.userossc
+*.sln.docstates
+
+# VS Code directories
+.vscode/
+!.vscode/tasks.json
+!.vscode/settings.json
+!.vscode/extensions.json
+.vscode/*
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userossc
+*.sln.docstates
+
+# User-specific files (Mono Auto Generated)
+mono_crash.*
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# Dependency directories
+x64/
+x86/
+[Oo]bj/
+[Bb]in/
+[Dd]ebug*/
+[Dd]ebugPublic/
+[Rr]elease*/
+[Rr]eleases*/
+[Ee]ntermediate/
+[Pp]roduction/
+[Bb]uild/
+[Bb]uilds/
+[Dd]ebugPS4/
+[Dd]ebugXbox/
+[Dd]ebugStage/
+[Rr]eleasePS4/
+[Rr]eleaseXbox/
+[Rr]eleaseStage/
+
+# Compiled Object files
+*.o
+*.obj
+*.lo
+*.la
+*.al
+*.libs
+*.ncb
+*.sdf
+*.ilk
+*.pdb
+*.idb
+*.idb1
+*.idb2
+
+# Compiled Dynamic libraries
+*.dll
+*.so
+*.dylib
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lib
+*.a
+*.la
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+*.elf
+
+# DLL state
+*.dlm
+
+# Debugger state
+*.vscode/
+!.vscode/tasks.json
+!.vscode/settings.json
+!.vscode/extensions.json
+.vscode/*
+
+# STMicroelectronics STM32CubeIDE
+.vscode/
+
+# JetBrains Rider
+.idea/
+.idea/*
+
+# QtCreator
+*.autosave
+*.pro.user*
