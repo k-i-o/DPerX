@@ -27,6 +27,6 @@ void Server::UpdateServerData() {
 }
 
 bool Server::GetValidPlayer(Player player){
-    // return player.gametick != 0 && player.id != this->localPlayer.id && (player.id > 0 || player.id < Server::MAX_PLAYERS);
-    return player.position.x != 0 && player.position.y != 0;
+    //return player.gametick != 0 && player.id != this->localPlayer.id && (player.id > 0 || player.id < Server::MAX_PLAYERS);
+    return player.gametick != 0 && player.position.x != 0 && player.position.y != 0;
 }

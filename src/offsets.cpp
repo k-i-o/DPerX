@@ -39,16 +39,16 @@ namespace variables {
             walk_right = 0xF8;
             break;
         case GameInfo::DDNET:
-            static_server = 0x594D10;
-            localplayer_id = 0x1410;
-            online_players = 0x1414;
-            first_player = 0x143C;
+            static_server = 0x5AC880;
+            localplayer_id = 0x1450;
+            online_players = 0x1454;
+            first_player = 0x147C;
             next_player = 0xF8;
-            frozen = 0x148C;
-            gametick = 0x1518;
-            position = 0x1524;
+            frozen = 0x14CC;
+            gametick = 0x147C;
+            position = 0x1564;
 
-            static_localplayer = 0x440C20;
+            static_localplayer = 0x57F9D0;
             my_aim = 0x10;
             my_aim_world = 0x30;
             fire = 0x70;

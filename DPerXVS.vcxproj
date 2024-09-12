@@ -154,16 +154,19 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="src\aimbot.cpp" />
+    <ClCompile Include="src\esp.cpp" />
     <ClCompile Include="src\localplayer.cpp" />
     <ClCompile Include="src\moves.cpp" />
     <ClCompile Include="src\offsets.cpp" />
     <ClCompile Include="src\server.cpp" />
     <ClCompile Include="src\spinbot.cpp" />
     <ClCompile Include="src\spoofer.cpp" />
+    <ClCompile Include="src\ui.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\aimbot.h" />
     <ClInclude Include="src\cheat.h" />
+    <ClInclude Include="src\esp.h" />
     <ClInclude Include="src\game_info.hpp" />
     <ClInclude Include="src\localplayer.h" />
     <ClInclude Include="src\memory.h" />
@@ -173,6 +176,7 @@
     <ClInclude Include="src\server.h" />
     <ClInclude Include="src\spinbot.h" />
     <ClInclude Include="src\spoofer.h" />
+    <ClInclude Include="src\ui.h" />
     <ClInclude Include="src\vector2.h" />
   </ItemGroup>
   <ItemGroup>

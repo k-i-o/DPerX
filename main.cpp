@@ -4,6 +4,8 @@
 #include "src/game_info.hpp"
 #include "src/spinbot.h"
 #include "src/offsets.hpp"
+#include "src/esp.h"
+//#include "src/ui.h"
 
 #include <thread>
 #include <chrono>
@@ -31,8 +33,13 @@ int main(int, char**) {
 
     std::cout << "DPerX 2024 by kiocode opened successfully!" << std::endl;
     std::cout << (GameInfo::DDPER ? "DDPER" : "DDNet") << " is running!" << std::endl;
-    std::cout << "Open mod menu: F6" << std::endl;
-    std::cout << "Close mod menu: F7" << std::endl;
+    //std::cout << "Open mod menu: F6" << std::endl;
+    //std::cout << "Close mod menu: F7" << std::endl;
+    std::cout << "Hold Left ALT to use aimbot" << std::endl;
+
+    //ui::CreateHUIWindow(&gameInfo);
+    //ui::CreateUIDevice();
+    //ui::CreateUIImGui();
 
     const auto& players_address = gameInfo.memory->Read<uintptr_t>(gameInfo.baseAddress + variables::Offsets::static_server);
     const auto& localPlayer_address = gameInfo.memory->Read<uintptr_t>(gameInfo.baseAddress + variables::Offsets::static_localplayer);
@@ -41,11 +48,28 @@ int main(int, char**) {
     Aimbot aimbot(localPlayer_address, gameInfo.memory);
     Moves moves(localPlayer_address, gameInfo.memory);
     Spinbot spinbot(localPlayer_address, gameInfo.memory);
+    ESP esp = ESP();
 
     aimbot.silent_enabled = true;
     aimbot.hotkeys = { VK_MENU };
 
     while (gameInfo.isRunning()) {
+    //while (ui::isRunning) {
+
+        //ui::BeginRenderUI();
+        //ui::RenderUI(&aimbot, &esp, &server, &moves, &spinbot);
+        //ui::EndRenderUI();
+
+        //if (GetAsyncKeyState(VK_F6)) {
+        //    ui::isMenuOpen = true;
+        //    ui::SetMenuOpen();
+        //}
+        //else if (GetAsyncKeyState(VK_F7)) {
+        //    ui::isMenuOpen = false;
+        //    ui::SetMenuClose();
+        //}
+
+        if (!gameInfo.isRunning()) { esp.enabled = false; continue; }
 
         server.UpdateServerData();
 
@@ -75,6 +99,10 @@ int main(int, char**) {
         std::this_thread::sleep_for(std::chrono::milliseconds(5));
 
     }
+
+    //ui::DestroyUIImGui();
+    //ui::DestroyUIDevice();
+    //ui::DestroyHUIWindow();
 
     return 0;
 }
