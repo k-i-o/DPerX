@@ -65,7 +65,7 @@ Player Aimbot::GetNearestToPlayer(float maxDistance, Server *server, bool avoid_
     {
         Player player = server->players[i];
 
-        if (player.id != Server::localPlayer.id && server->GetValidPlayer(player) && ((avoid_freezed_tee && !player.freezed) || !avoid_freezed_tee))
+        if (player.id != Server::localPlayer.id && server->GetValidPlayer(player) && ((avoid_freezed_tee && !player.frozen) || !avoid_freezed_tee))
         {
             float dist = Aimbot::distance(player.position, Server::localPlayer.position);
 

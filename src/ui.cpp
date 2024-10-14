@@ -310,7 +310,7 @@ void ui::RenderUI(Aimbot *aimbot, ESP *esp, Server *server, Moves *moves, Spinbo
        
         }
         
-        ImGui::Checkbox("Aimbot avoid freezed tees", &aimbot->avoid_freezed_tee);
+        ImGui::Checkbox("Aimbot avoid frozen tees", &aimbot->avoid_freezed_tee);
 
         if(ImGui::Button("Custom hokey silent aimbot")){
             aimbot->hotkeys = ListenAndPrintKeys();

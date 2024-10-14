@@ -16,8 +16,8 @@ void Server::UpdateServerData(){
             this->players[i].id = i;
             this->players[i].position = memory->Read<Vector2>(player + offsets::position);
             this->players[i].gametick = memory->Read<int32_t>(player + offsets::gametick);
-            int freezed = memory->Read<int32_t>(player + offsets::freezed);
-            this->players[i].freezed = freezed > 0 ? true : false;
+            int frozen = memory->Read<int32_t>(player + offsets::frozen);
+            this->players[i].frozen = frozen > 0 ? true : false;
             
             if(i == memory->Read<int32_t>(memory_address + offsets::localplayer_id)){
                 Server::localPlayer.updateLocalPlayerData(this->players[i]);

@@ -2,6 +2,7 @@
 
 #include "memory.h"
 #include "offsets.hpp"
+#include <string>
 
 class GameInfo{
     public:

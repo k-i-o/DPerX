@@ -9,7 +9,7 @@ class Player{
         Vector2 speed;
         int gametick;
         float hook_time;
-        bool freezed;
+        bool frozen;
         int player_size = 64;
 
         Player(){}
